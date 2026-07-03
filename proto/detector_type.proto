@@ -1058,4 +1058,5 @@ enum DetectorType {
   PgAnalyzeReadKey = 1054;
   RedHatPyxis = 1055;
   OctopusDeploy = 1056;
+  OpenRouter = 1057;
 }

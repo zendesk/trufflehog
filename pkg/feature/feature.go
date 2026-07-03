@@ -30,6 +30,7 @@ var (
 	RedHatPyxisDetectorEnabled      atomic.Bool
 	OctopusDeployDetectorEnabled    atomic.Bool
 	DropUnverifiedJWTResults        atomic.Bool
+	OpenRouterDetectorEnabled       atomic.Bool
 )
 
 type AtomicString struct {

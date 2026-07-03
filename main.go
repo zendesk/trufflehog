@@ -551,6 +551,7 @@ func run(state overseer.State, logSync func() error) {
 	feature.PgAnalyzeReadKeyDetectorEnabled.Store(true)
 	feature.RedHatPyxisDetectorEnabled.Store(true)
 	feature.OctopusDeployDetectorEnabled.Store(true)
+	feature.OpenRouterDetectorEnabled.Store(true)
 
 	conf := &config.Config{}
 	if *configFilename != "" {
