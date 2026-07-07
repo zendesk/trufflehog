@@ -35,6 +35,7 @@ var (
 	DuffelTokenDetectorEnabled               atomic.Bool
 	ShippoDetectorEnabled                    atomic.Bool
 	IPInfoDetectorEnabled                    atomic.Bool
+	LobDetectorEnabled                       atomic.Bool
 )
 
 type AtomicString struct {

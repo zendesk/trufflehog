@@ -119,7 +119,6 @@ var excludedFromDefaultList = map[detector_typepb.DetectorType]struct{}{
 	// They are not added immediately out of caution for the impact on customers/users.
 	// Remove each entry once its detector has been carefully added.
 	detector_typepb.DetectorType_Guru: {},
-	detector_typepb.DetectorType_Lob:  {},
 	detector_typepb.DetectorType_Tru:  {},
 
 	// Feature flag gated detectors
@@ -142,6 +141,7 @@ var excludedFromDefaultList = map[detector_typepb.DetectorType]struct{}{
 	detector_typepb.DetectorType_DuffelToken:               {},
 	detector_typepb.DetectorType_Shippo:                    {},
 	detector_typepb.DetectorType_IPInfo:                    {},
+	detector_typepb.DetectorType_Lob:                       {},
 
 	// Reserved / special types.
 	detector_typepb.DetectorType_CustomRegex: {}, // added dynamically via engine config, not via buildDetectorList()
