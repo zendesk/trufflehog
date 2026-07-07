@@ -502,6 +502,7 @@ import (
 	netlifyv2 "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/netlify/v2"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/netsuite"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/neutrinoapi"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/newrelicinsightsinsertkey"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/newrelicpersonalapikey"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/newsapi"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/newscatcher"
@@ -1404,6 +1405,7 @@ func buildDetectorList() []detectors.Detector {
 		&netlifyv2.Scanner{},
 		&netsuite.Scanner{},
 		&neutrinoapi.Scanner{},
+		&newrelicinsightsinsertkey.Scanner{},
 		&newrelicpersonalapikey.Scanner{},
 		&newsapi.Scanner{},
 		&newscatcher.Scanner{},
@@ -1820,6 +1822,8 @@ func buildDetectorList() []detectors.Detector {
 			return !feature.OctopusDeployDetectorEnabled.Load()
 		case *openrouter.Scanner:
 			return !feature.OpenRouterDetectorEnabled.Load()
+		case *newrelicinsightsinsertkey.Scanner:
+			return !feature.NewRelicInsightsInsertKeyDetectorEnabled.Load()
 		default:
 			return false
 		}
