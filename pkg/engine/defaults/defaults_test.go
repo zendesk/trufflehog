@@ -140,6 +140,7 @@ var excludedFromDefaultList = map[detector_typepb.DetectorType]struct{}{
 	detector_typepb.DetectorType_OctopusDeploy:             {},
 	detector_typepb.DetectorType_OpenRouter:                {},
 	detector_typepb.DetectorType_NewRelicInsightsInsertKey: {},
+	detector_typepb.DetectorType_DuffelToken:               {},
 
 	// Reserved / special types.
 	detector_typepb.DetectorType_CustomRegex: {}, // added dynamically via engine config, not via buildDetectorList()

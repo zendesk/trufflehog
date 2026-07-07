@@ -32,6 +32,7 @@ var (
 	DropUnverifiedJWTResults                 atomic.Bool
 	OpenRouterDetectorEnabled                atomic.Bool
 	NewRelicInsightsInsertKeyDetectorEnabled atomic.Bool
+	DuffelTokenDetectorEnabled               atomic.Bool
 )
 
 type AtomicString struct {

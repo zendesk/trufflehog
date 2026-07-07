@@ -1060,4 +1060,5 @@ enum DetectorType {
   OctopusDeploy = 1056;
   OpenRouter = 1057;
   NewRelicInsightsInsertKey = 1058;
+  DuffelToken = 1059;
 }
