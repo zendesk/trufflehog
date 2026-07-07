@@ -555,6 +555,7 @@ func run(state overseer.State, logSync func() error) {
 	feature.NewRelicInsightsInsertKeyDetectorEnabled.Store(true)
 	feature.DuffelTokenDetectorEnabled.Store(true)
 	feature.ShippoDetectorEnabled.Store(true)
+	feature.IPInfoDetectorEnabled.Store(true)
 
 	conf := &config.Config{}
 	if *configFilename != "" {

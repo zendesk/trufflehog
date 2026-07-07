@@ -34,6 +34,7 @@ var (
 	NewRelicInsightsInsertKeyDetectorEnabled atomic.Bool
 	DuffelTokenDetectorEnabled               atomic.Bool
 	ShippoDetectorEnabled                    atomic.Bool
+	IPInfoDetectorEnabled                    atomic.Bool
 )
 
 type AtomicString struct {
