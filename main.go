@@ -554,6 +554,7 @@ func run(state overseer.State, logSync func() error) {
 	feature.OpenRouterDetectorEnabled.Store(true)
 	feature.NewRelicInsightsInsertKeyDetectorEnabled.Store(true)
 	feature.DuffelTokenDetectorEnabled.Store(true)
+	feature.ShippoDetectorEnabled.Store(true)
 
 	conf := &config.Config{}
 	if *configFilename != "" {

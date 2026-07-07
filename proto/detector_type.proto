@@ -1061,4 +1061,5 @@ enum DetectorType {
   OpenRouter = 1057;
   NewRelicInsightsInsertKey = 1058;
   DuffelToken = 1059;
+  Shippo = 1060;
 }

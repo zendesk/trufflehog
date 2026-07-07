@@ -33,6 +33,7 @@ var (
 	OpenRouterDetectorEnabled                atomic.Bool
 	NewRelicInsightsInsertKeyDetectorEnabled atomic.Bool
 	DuffelTokenDetectorEnabled               atomic.Bool
+	ShippoDetectorEnabled                    atomic.Bool
 )
 
 type AtomicString struct {
