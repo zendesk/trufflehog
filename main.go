@@ -562,6 +562,7 @@ func run(state overseer.State, logSync func() error) {
 	feature.HashiCorpVaultTokenDetectorEnabled.Store(true)
 	feature.CloudflareApiTokenV2DetectorEnabled.Store(true)
 	feature.CloudflareGlobalApiKeyV2DetectorEnabled.Store(true)
+	feature.DuoDetectorEnabled.Store(true)
 
 	conf := &config.Config{}
 	if *configFilename != "" {

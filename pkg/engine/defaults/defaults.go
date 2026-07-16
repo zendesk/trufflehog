@@ -256,6 +256,7 @@ import (
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/droneci"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/dropbox"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/duffeltoken"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/duo"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/duply"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/dwolla"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/dynalist"
@@ -1155,6 +1156,7 @@ func buildDetectorList() []detectors.Detector {
 		&droneci.Scanner{},
 		&dropbox.Scanner{},
 		&duffeltoken.Scanner{},
+		&duo.Scanner{},
 		&duply.Scanner{},
 		&dwolla.Scanner{},
 		&dynalist.Scanner{},
@@ -1856,6 +1858,8 @@ func buildDetectorList() []detectors.Detector {
 			return !feature.CloudflareApiTokenV2DetectorEnabled.Load()
 		case *cloudflareglobalapikeyv2.Scanner:
 			return !feature.CloudflareGlobalApiKeyV2DetectorEnabled.Load()
+		case *duo.Scanner:
+			return !feature.DuoDetectorEnabled.Load()
 		default:
 			return false
 		}
